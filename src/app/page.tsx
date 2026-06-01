@@ -1,6 +1,6 @@
 const Page = () => {
   return (
-    <div className='container max-w-5xl mx-auto border-x border-zinc-700 min-h-screen'>
+    <div className='container max-w-4xl mx-auto min-h-screen'>
 
     </div>
   );
