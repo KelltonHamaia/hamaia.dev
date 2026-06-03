@@ -1,8 +1,10 @@
+import { Header } from "@/components/layout/Header";
+
 const Page = () => {
   return (
-    <div className='container max-w-4xl mx-auto min-h-screen'>
-
-    </div>
+    <main className="container-base">
+      <Header />
+    </main>
   );
-}
+};
 export default Page;
