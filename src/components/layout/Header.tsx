@@ -1,5 +1,4 @@
 import Image from "next/image";
-
 export const Header = () => {
 
   return (
@@ -11,7 +10,7 @@ export const Header = () => {
           gosto de estudar e resolver desafios de programação.
         </p>
       </div>
-      <div className="relative size-36 md:size-40 rounded-full overflow-hidden ring-4 ring-zinc-900 hover:scale-120 hover:rotate-2 transition">
+      <div className="relative size-36 rounded overflow-hidden hover:scale-120 transition">
         <Image
           alt="Minha foto de perfil no estilo do Studio Ghibbli"
           src={'/images/profile/myself-as-anime.webp'}

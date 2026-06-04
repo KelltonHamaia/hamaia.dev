@@ -175,6 +175,6 @@
 
 @layer components {
   .container-base {
-    @apply mx-auto min-h-screen w-full max-w-4xl px-5 sm:py-24 py-12 lg:px-0;
+    @apply mx-auto min-h-screen w-full max-w-212 px-5 sm:py-24 py-12 lg:px-0;
   }
 }
