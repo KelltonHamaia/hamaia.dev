@@ -10,7 +10,7 @@ export const Header = () => {
           gosto de estudar e resolver desafios de programação.
         </p>
       </div>
-      <div className="relative size-36 rounded overflow-hidden hover:scale-120 transition">
+      <div className="relative size-36 rounded overflow-hidden hover:scale-110 transition">
         <Image
           alt="Minha foto de perfil no estilo do Studio Ghibbli"
           src={'/images/profile/myself-as-anime.webp'}
