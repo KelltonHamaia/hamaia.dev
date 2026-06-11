@@ -1,7 +1,9 @@
-import { Header } from "@/components/layout/Header";
-import { About } from "@/components/sections/About";
-import { Commits } from "@/components/sections/Commits";
-import { Experiences } from "@/components/sections/Experiences";
+import { Header } from "@/components/app/layout/Header";
+import { About } from "@/components/app/sections/About";
+import { Commits } from "@/components/app/sections/Commits";
+import { Education } from "@/components/app/sections/Education";
+import { Experiences } from "@/components/app/sections/Experiences";
+import { Skills } from "@/components/app/sections/Skills";
 
 const Page = () => {
   return (
@@ -10,6 +12,8 @@ const Page = () => {
       <Commits />
       <About />
       <Experiences />
+      <Education />
+      <Skills />
     </main>
   );
 };

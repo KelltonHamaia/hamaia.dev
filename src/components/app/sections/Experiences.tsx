@@ -7,7 +7,6 @@ export const Experiences = () => {
   return (
     <section className="my-8 space-y-2">
       <h2 className="text-subtitle-sm md:text-subtitle font-bold flex gap-2">Experiência Profissional</h2>
-
       <Accordion
         type="single"
         collapsible
