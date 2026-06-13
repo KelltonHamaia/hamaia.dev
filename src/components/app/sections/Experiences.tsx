@@ -23,7 +23,7 @@ export const Experiences = () => {
                 fill
               />
             </div>
-            <div className='flex-1 flex flex-col justify-between'>
+            <div className='flex-1 flex flex-col justify-between gap-2'>
               <div className='block md:flex'>
                 <p className='flex-1'>Vexur</p>
                 <p className='hidden md:block text-muted-foreground'>Setembro 2024 - O momento</p>

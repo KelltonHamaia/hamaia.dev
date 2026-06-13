@@ -3,7 +3,7 @@ import { About } from "@/components/app/sections/About";
 import { Commits } from "@/components/app/sections/Commits";
 import { Education } from "@/components/app/sections/Education";
 import { Experiences } from "@/components/app/sections/Experiences";
-import { Skills } from "@/components/app/sections/Skills";
+import { SkillSection } from "@/components/app/sections/skills/Skill-section";
 
 const Page = () => {
   return (
@@ -13,7 +13,7 @@ const Page = () => {
       <About />
       <Experiences />
       <Education />
-      <Skills />
+      <SkillSection />
     </main>
   );
 };
