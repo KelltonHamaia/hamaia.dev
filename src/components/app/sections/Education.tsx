@@ -7,7 +7,7 @@ export const Education = () => {
         Educação
       </h2>
       <div className="space-y-4">
-        <div className="flex gap-4 hover:no-underline">
+        <div className="flex gap-4">
           <div className="relative size-12 overflow-clip rounded-lg">
             <Image
               src={"/images/education/logo-ifpr.webp"}
@@ -30,7 +30,7 @@ export const Education = () => {
             </div>
           </div>
         </div>
-        <div className="flex gap-4 hover:no-underline">
+        <div className="flex gap-4">
           <div className="relative size-12 overflow-clip rounded-lg">
             <Image
               src={"/images/education/logo-ifpr.webp"}

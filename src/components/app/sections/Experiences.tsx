@@ -39,7 +39,7 @@ export const Experiences = () => {
               <span>Setembro 2024 - O momento</span>
               <span>1 ano 10 meses</span>
             </div>
-            <div>
+            <div className='tracking-tight md:pr-8'>
               Atuo com desenvolvimento e manutenção de APIs com Node.js, TypeScript, Express e Fastify, além de aplicações web em Vue.js e React.
               Trabalhei com modelagem de dados em Neo4j, integrações entre sistemas e processos de importação e exportação de dados.
               Entre as principais contribuições, reestruturei o sistema de anexos das comunicações por e-mail,
