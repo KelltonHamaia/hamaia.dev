@@ -8,10 +8,11 @@ import {
   SheetContent,
   SheetFooter,
   SheetHeader,
-  SheetTitle
+  SheetTitle,
 } from '@/components/ui/sheet'
 import { useIsMobile } from '@/hooks/useIsMobile'
 import Image from 'next/image'
+import Link from 'next/link'
 
 type Props = {
   open: boolean
@@ -20,12 +21,7 @@ type Props = {
 
 export const ProjectSheet = ({ open, project }: Props) => {
   const isMobile = useIsMobile()
-  const side = isMobile ? 'bottom' : 'right' as const
-
-  const handleOpenLink = (event: MouseEvent) => {
-    event.preventDefault()
-    event.stopPropagation()
-  }
+  const side = isMobile ? 'bottom' : ('right' as const)
 
   return (
     <Sheet open={open}>
@@ -68,15 +64,19 @@ export const ProjectSheet = ({ open, project }: Props) => {
                   </a>
                 </Button>
               )}
-              <Button variant="outline" asChild className={`rounded ${!project.demoURL ? 'col-span-full' : ''}`}>
-                <a
+              <Button
+                variant="outline"
+                asChild
+                className={`rounded ${!project.demoURL ? 'col-span-full' : ''}`}
+              >
+                <Link
                   href={project.repositoryURL}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={(e) => e.stopPropagation()}
                 >
                   Ver repositório
-                </a>
+                </Link>
               </Button>
             </div>
           </SheetFooter>

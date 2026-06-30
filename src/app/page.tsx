@@ -1,10 +1,11 @@
-import { Header } from "@/components/app/layout/Header";
-import { About } from "@/components/app/sections/About";
-import { Commits } from "@/components/app/sections/Commits";
-import { Education } from "@/components/app/sections/Education";
-import { Experiences } from "@/components/app/sections/Experiences";
-import { Projects } from "@/components/app/sections/Projects";
-import { SkillSection } from "@/components/app/sections/skills/Skill-section";
+import { Header } from '@/components/app/layout/Header'
+import { About } from '@/components/app/sections/About'
+import { Commits } from '@/components/app/sections/commits/Commits'
+import { Contact } from '@/components/app/sections/contact/Contact'
+import { Education } from '@/components/app/sections/Education'
+import { Experiences } from '@/components/app/sections/Experiences'
+import { ProjectSection } from '@/components/app/sections/projects/Project-section'
+import { SkillSection } from '@/components/app/sections/skills/Skill-section'
 
 const Page = () => {
   return (
@@ -15,8 +16,9 @@ const Page = () => {
       <Experiences />
       <Education />
       <SkillSection />
-      <Projects />
+      <ProjectSection />
+      <Contact />
     </main>
-  );
-};
-export default Page;
+  )
+}
+export default Page
