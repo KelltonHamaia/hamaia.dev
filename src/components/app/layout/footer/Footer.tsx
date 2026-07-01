@@ -1,7 +1,7 @@
-import { data } from '@/components/app/sections/contact/data'
-import { ContactCard } from '@/components/app/sections/contact/Contact-card'
+import { data } from '@/components/app/layout/footer/data'
+import { FooterCard } from '@/components/app/layout/footer/Footer-card'
 
-export const Contact = () => {
+export const Footer = () => {
   return (
     <section className="my-8 space-y-2 text-center">
       <h2 className="text-subtitle-sm md:text-subtitle font-bold">
@@ -16,7 +16,7 @@ export const Contact = () => {
 
       <div className="mx-auto mt-6 grid max-w-fit grid-cols-2 gap-2">
         {data.map((contact) => (
-          <ContactCard key={contact.title} contact={contact} />
+          <FooterCard key={contact.title} contact={contact} />
         ))}
       </div>
     </section>

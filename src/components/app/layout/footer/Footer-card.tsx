@@ -1,11 +1,11 @@
-import { type Contact } from '@/components/app/sections/contact/data'
+import { type Contact } from '@/components/app/layout/footer/data'
 import Image from 'next/image'
 import Link from 'next/link'
 
 type Props = {
   contact: Contact
 }
-export const ContactCard = ({ contact }: Props) => {
+export const FooterCard = ({ contact }: Props) => {
   return (
     <Link
       className="border-border flex items-center gap-4 rounded border bg-zinc-900/80 p-2"
