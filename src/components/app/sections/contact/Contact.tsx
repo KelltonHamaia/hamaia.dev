@@ -11,10 +11,10 @@ export const Contact = () => {
         Tem alguma pergunta, um <i>feedback</i> ou só quer dar um alô e trocar
         uma idéia? Fico mais do que feliz em poder falar! Sinta-se a vontade
         para entrar em contato utilizando as informações abaixo, e em breve eu
-        te retorno.
+        te retorno - na dúvida, busque um ☕ e aguarde.
       </p>
 
-      <div className="mx-auto grid max-w-fit grid-cols-2 gap-2">
+      <div className="mx-auto mt-6 grid max-w-fit grid-cols-2 gap-2">
         {data.map((contact) => (
           <ContactCard key={contact.title} contact={contact} />
         ))}
