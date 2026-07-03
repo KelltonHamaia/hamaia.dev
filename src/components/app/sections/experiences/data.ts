@@ -20,7 +20,7 @@ export const data: Experience[] = [
     role: 'Desenvolvedor fullstack',
     url: '/images/companies/vexur.webp',
     period: {
-      startedAt: new Date(2024, 9 - 1, 1), //workaround para contornar erro de data por timezone
+      startedAt: new Date(2024, 8, 1),
       endedAt: null,
     },
     description:
