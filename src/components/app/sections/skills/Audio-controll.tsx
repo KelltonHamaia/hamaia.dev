@@ -7,7 +7,7 @@ import { Volume2Icon, VolumeXIcon } from "lucide-react";
 import { useState } from "react";
 
 export const AudioControl = () => {
-  const [enabled, setEnabled] = useState<boolean>(true);
+  const [enabled, setEnabled] = useState<boolean>(false);
 
   const handleAudioControl = () => {
     if (enabled) {
