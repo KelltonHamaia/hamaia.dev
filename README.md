@@ -4,4 +4,5 @@ Aqui você encontra informações sobre os meus projetos e um pouquinho sobre mi
 
 Este projeto foi feito utilizando React, Next.js, TailwindCSS e Shadcn/ui.
 
-Obrigado pela visita!
+Obrigado pela visita​! 🫡
+![Captura de tela do meu website pessoal (portfolio)](https://raw.githubusercontent.com/KelltonHamaia/hamaia.dev/refs/heads/main/public/images/profile/portfolio.png)
