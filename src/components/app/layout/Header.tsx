@@ -6,7 +6,7 @@ export const Header = () => {
       <div className="flex-1">
         <h1 className='text-title-sm md:text-title-md lg:text-title tracking-tighter font-bold'>Opa, Kell aqui!</h1>
         <p className="text-subtitle-sm md:text-subtitle">
-          Desenvolvedor fullstack na <span className="text-indigo-600">@vexur-startup</span>,
+          Desenvolvedor fullstack na <span className="text-green-500">@vexur-startup</span>,
           gosto de estudar e resolver desafios de programação.
         </p>
       </div>
