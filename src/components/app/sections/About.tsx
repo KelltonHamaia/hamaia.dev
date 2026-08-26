@@ -22,7 +22,7 @@ export const About = () => {
           className="animate-pulse px-1 text-green-500"
           asChild
         >
-          <Link href="/docs/kellton_hamaia_curriculo_pt.pdf">
+          <Link href="/docs/kellton_hamaia_resumee_pt.pdf">
             meu currículo aqui <FileTextIcon />
           </Link>
         </Button>
