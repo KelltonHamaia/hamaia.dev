@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from 'next/image'
 
 export const Education = () => {
   return (
@@ -10,8 +10,8 @@ export const Education = () => {
         <div className="flex gap-4">
           <div className="relative size-12 overflow-clip rounded-lg">
             <Image
-              src={"/images/education/logo-ifpr.webp"}
-              alt={"Logo da instituição Instituto Federal do Paraná"}
+              src={'/images/education/logo-ifpr.webp'}
+              alt={'Logo da instituição Instituto Federal do Paraná'}
               className="object-cover"
               sizes="48px"
               fill
@@ -24,7 +24,7 @@ export const Education = () => {
                 2022 - 2025
               </p>
             </div>
-            <div className="text-muted-foreground block md:flex text-sm">
+            <div className="text-muted-foreground block text-sm md:flex">
               <p className="flex-1">Graduação: Tecnólogo</p>
               <p className="hidden md:block">3 anos</p>
             </div>
@@ -33,8 +33,8 @@ export const Education = () => {
         <div className="flex gap-4">
           <div className="relative size-12 overflow-clip rounded-lg">
             <Image
-              src={"/images/education/logo-ifpr.webp"}
-              alt={"Logo da instituição Instituto Federal do Paraná"}
+              src={'/images/education/logo-ifpr.webp'}
+              alt={'Logo da instituição Instituto Federal do Paraná'}
               className="object-cover"
               sizes="48px"
               fill
@@ -49,7 +49,7 @@ export const Education = () => {
                 2018 - 2022
               </p>
             </div>
-            <div className="text-muted-foreground block md:flex text-sm">
+            <div className="text-muted-foreground block text-sm md:flex">
               <p className="flex-1">Ensino médio - Técnico em informática</p>
               <p className="hidden md:block">4 anos</p>
             </div>
@@ -57,5 +57,5 @@ export const Education = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}

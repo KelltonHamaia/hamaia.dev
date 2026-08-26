@@ -5,16 +5,24 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion'
-import { getDurationBetweenDates, getIntervalBetweenDates } from '@/utils/format-date'
+import {
+  getDurationBetweenDates,
+  getIntervalBetweenDates,
+} from '@/utils/format-date'
 import Image from 'next/image'
-
 
 type Props = {
   experience: Experience
 }
 export const ExperienceItem = ({ experience }: Props) => {
-  const dateRange = getDurationBetweenDates(experience.period.startedAt, experience.period.endedAt)
-  const duration = getIntervalBetweenDates(experience.period.startedAt, experience.period.endedAt)
+  const dateRange = getDurationBetweenDates(
+    experience.period.startedAt,
+    experience.period.endedAt,
+  )
+  const duration = getIntervalBetweenDates(
+    experience.period.startedAt,
+    experience.period.endedAt,
+  )
   return (
     <Accordion type="single" collapsible defaultValue="vexur">
       <AccordionItem value="vexur">
@@ -47,19 +55,23 @@ export const ExperienceItem = ({ experience }: Props) => {
             <span>{duration}</span>
           </div>
           <div className="tracking-tight md:pr-8">
-            {experience.description} Abaixo estão as minhas principais contribuições:
+            {experience.description} Abaixo estão as minhas principais
+            contribuições:
           </div>
 
-          <ul className='list-inside list-none'>
-            {experience.keyContributions.map(contribution => (
-              <li className='my-3' key={contribution.name}>
-                <p><span className='text-foreground'>{contribution.name}</span>: <br />{contribution.description}</p>
+          <ul className="list-inside list-none">
+            {experience.keyContributions.map((contribution) => (
+              <li className="my-3" key={contribution.name}>
+                <p>
+                  <span className="text-foreground">{contribution.name}</span>:{' '}
+                  <br />
+                  {contribution.description}
+                </p>
               </li>
             ))}
           </ul>
         </AccordionContent>
       </AccordionItem>
     </Accordion>
-  );
-
+  )
 }

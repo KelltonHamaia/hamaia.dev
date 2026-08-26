@@ -8,11 +8,8 @@ export const Experiences = () => {
         Experiência Profissional
       </h2>
 
-      {data.map(experience => (
-        <ExperienceItem
-          key={experience.company}
-          experience={experience}
-        />
+      {data.map((experience) => (
+        <ExperienceItem key={experience.company} experience={experience} />
       ))}
     </section>
   )

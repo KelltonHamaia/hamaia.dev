@@ -1,6 +1,6 @@
-import { SkillArea } from "@/components/app/sections/skills/Skill-area";
-import { skills } from "@/components/app/sections/skills/data";
-import { AudioControl } from "@/components/app/sections/skills/Audio-controll";
+import { SkillArea } from '@/components/app/sections/skills/Skill-area'
+import { skills } from '@/components/app/sections/skills/data'
+import { AudioControl } from '@/components/app/sections/skills/Audio-controll'
 
 export const SkillSection = () => {
   return (
@@ -12,7 +12,7 @@ export const SkillSection = () => {
         <AudioControl />
       </div>
 
-      {skills.map(skill => (
+      {skills.map((skill) => (
         <SkillArea
           title={skill.title}
           technologies={skill.technologies}
@@ -20,5 +20,5 @@ export const SkillSection = () => {
         />
       ))}
     </section>
-  );
-};
+  )
+}

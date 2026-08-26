@@ -1,26 +1,29 @@
-"use client"
+'use client'
 
-import { Button } from "@/components/ui/button";
-import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
-import { useEnableAudio, useDisableAudio } from "@/hooks/audio";
-import { Volume2Icon, VolumeXIcon } from "lucide-react";
-import { useState } from "react";
+import { Button } from '@/components/ui/button'
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from '@/components/ui/tooltip'
+import { useEnableAudio, useDisableAudio } from '@/hooks/audio'
+import { Volume2Icon, VolumeXIcon } from 'lucide-react'
+import { useState } from 'react'
 
 export const AudioControl = () => {
-  const [enabled, setEnabled] = useState<boolean>(false);
+  const [enabled, setEnabled] = useState<boolean>(false)
 
   const handleAudioControl = () => {
     if (enabled) {
-      useDisableAudio();
-      setEnabled(false);
+      useDisableAudio()
+      setEnabled(false)
     } else {
-      useEnableAudio();
-      setEnabled(true);
+      useEnableAudio()
+      setEnabled(true)
     }
-  };
+  }
 
   return (
-
     <Tooltip>
       <TooltipTrigger asChild>
         <Button
@@ -31,11 +34,10 @@ export const AudioControl = () => {
         >
           {enabled ? <VolumeXIcon /> : <Volume2Icon />}
         </Button>
-
       </TooltipTrigger>
       <TooltipContent>
         {`${enabled ? 'Desabilitar' : 'Habilitar'} efeito sonoro ao passar o mouse nas Skills`}
       </TooltipContent>
     </Tooltip>
-  );
-};
+  )
+}
