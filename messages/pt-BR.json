@@ -1,0 +1,114 @@
+{
+  "Header": {
+    "greeting": "Opa, Kell aqui!",
+    "tagline": "Desenvolvedor fullstack na <highlight>vexur-startup</highlight>, gosto de estudar e resolver desafios de programação.",
+    "altImage": "Minha foto de perfil no estilo do Studio Ghibbli"
+  },
+  "CommitPanel": {
+    "githubLoadingPlaceholder": "Buscando atividade do github...",
+    "totalCount": "{{count}} contribuições em {{year}}",
+    "legend": {
+      "less": "Menos",
+      "more": "Mais"
+    }
+  },
+  "About": {
+    "title": "Sobre mim",
+    "description": "Trabalho criando e mantendo sistemas utilizando Node.js, Vue.js, React, TypeScript e Neo4J. Tenho interesse especial por arquitetura de software (acho muito massa), modelagem de dados e construção de APIs, mas também gosto bastante da parte visual e interativa do frontend. Nas horas vagas, provavelmente estou estudando alguma tecnologia nova ou algum idioma, jogando alguma coisa, assistindo animes ou tomando café.",
+    "buttonText": "Ah sim, e você pode ver meu currículo aqui",
+    "resumeePath": "/docs/kellton_hamaia_resumee_pt.pdf"
+  },
+  "Experiences": {
+    "title": "Experiência Profissional",
+    "Vexur": {
+      "role": "Desenvolvedor Fullstack",
+      "description": "Atuo no desenvolvimento, evolução e manutenção de soluções web, criando APIs e aplicações utilizando Node.js, TypeScript, Neo4j, Vue.js e React. Meu trabalho envolve modelagem de dados, integrações entre sistemas, desenvolvimento de novas funcionalidades, modernização de aplicações existentes e automação de processos, sempre priorizando soluções simples, escaláveis e de fácil manutenção. Abaixo estão as minhas principais contribuições:",
+      "altCompanyImage": "Logo da empresa Vexur",
+      "mainContribuitions": [
+        {
+          "key": "coopercard",
+          "name": "Integração com a instituição de pagamentos Cooper card",
+          "description": "Projetei e desenvolvi uma integração para geração e gerenciamento de arquivos de pagamento de comissões, implementando a API em Fastify, TypeScript e Neo4j e a interface em Vue 3, com controle de histórico e rastreabilidade das exportações."
+        },
+        {
+          "key": "medsenior",
+          "name": "Integração MedSenior",
+          "description": "Desenvolvo e mantenho a integração responsável pelo processo de implantação de propostas junto à operadora de plano de saúde MedSenior, acompanhando o fluxo de ponta a ponta, desde o envio e adequação dos dados até o processamento dos retornos, assinatura digital e implantação da proposta. Também desenvolvi uma interface para acompanhamento do status e andamento das propostas."
+        },
+        {
+          "key": "mxm",
+          "name": "Integração MXM",
+          "description": "Atuo na manutenção e evolução da integração com o ERP MXM, responsável pela sincronização de clientes e envio de títulos financeiros. Desenvolvi processos automatizados para cadastro periódico dos clientes e envio dos títulos ainda não integrados, além de uma interface para acompanhamento dos clientes e títulos processados."
+        },
+        {
+          "key": "emails",
+          "name": "Sistema de Comunicações por E-mail",
+          "description": "Reestruturei o fluxo de geração de anexos criando uma solução reutilizável que reduziu o acoplamento do código e eliminou a necessidade de alterações manuais para novos comunicados."
+        },
+        {
+          "key": "visualizer",
+          "name": "Migração dos Visualizadores de Comunicação",
+          "description": "Liderei a modernização dos visualizadores, migrando de Vue 2 para React, melhorando a experiência de desenvolvimento e facilitando a evolução e manutenção da aplicação."
+        },
+        {
+          "key": "neo4jOptimization",
+          "name": "Otimização de Consultas em Neo4j e garantia de compatibilidade",
+          "description": "Analisei e refatorei consultas Cypher, revisando a modelagem de dados quando necessário para simplificar as buscas, reduzir a complexidade das queries e melhorar o desempenho das aplicações. Adequei consultas Cypher e realizei os ajustes necessários para garantir compatibilidade com a nova versão do banco de dados (4 para 5), contribuindo para a atualização da plataforma e continuidade da aplicação."
+        }
+      ]
+    }
+  },
+  "Education": {
+    "title": "Formação Acadêmica",
+    "items": [
+      {
+        "type": "Ensino Médio + Educação Técnica",
+        "name": "Ensino Médio integrado ao curso técnico em Informática",
+        "image": "/images/education/logo-ifpr.webp",
+        "altImage": "Logotipo do Instituto Federal do Paraná",
+        "start": 2018,
+        "end": 2022,
+        "duration": "4 anos"
+      },
+      {
+        "type": "Ensino Superior",
+        "name": "Tecnólogo em Tecnologias em Sistemas para Internet",
+        "image": "/images/education/logo-ifpr.webp",
+        "altImage": "Logotipo do Instituto Federal do Paraná",
+        "start": 2022,
+        "end": 2025,
+        "duration": "3 anos",
+        "award": "- Premiado com Láurea acadêmica 🎖️"
+      }
+    ]
+  },
+  "Skills": {
+    "frontend": "Front-end",
+    "backend": "back-end",
+    "databaseAndDevops": "Banco de dados & Devops"
+  },
+  "Projects": {
+    "title": "Projects",
+    "items": [
+      {
+        "name": "Ani.me",
+        "thumbnail": "/images/projects/ani-me.webp",
+        "type": "frontend",
+        "description": "Minha resolução do desafio 29 da comunidade do discord Codelândia, onde deve ser desenvolvido um layout para um site de animes.",
+        "technologies": [
+          "React",
+          "Next.js (app Router)",
+          "Tailwindcss",
+          "Zustand",
+          "ShadcnUI"
+        ],
+        "demoURL": "https://challenge-ani-me.vercel.app/",
+        "repositoryURL": "https://github.com/KelltonHamaia/ani.me"
+      }
+    ]
+  },
+  "Footer": {
+    "title": "Fale comigo!",
+    "description": "Tem alguma pergunta, um feedback ou só quer dar um alô e trocar uma idéia? Fico mais do que feliz em poder falar! Sinta-se a vontade para entrar em contato utilizando as informações abaixo, e em breve eu te retorno - na dúvida, busque um ☕ e aguarde."
+  }
+}

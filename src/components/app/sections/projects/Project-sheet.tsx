@@ -11,6 +11,7 @@ import {
   SheetTitle,
 } from '@/components/ui/sheet'
 import { useIsMobile } from '@/hooks/useIsMobile'
+import { useLocale } from 'next-intl'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -22,7 +23,10 @@ type Props = {
 export const ProjectSheet = ({ open, project }: Props) => {
   const isMobile = useIsMobile()
   const side = isMobile ? 'bottom' : ('right' as const)
+  const locale = useLocale()
 
+  const buttonLabelLive = locale === 'en' ? 'Live demo' : 'Ver projeto'
+  const buttonLabelRepo = locale === 'en' ? 'Repository' : 'Ver repositório'
   return (
     <Sheet open={open}>
       <SheetContent className="pb-16 lg:min-w-120 lg:pb-0" side={side}>
@@ -60,7 +64,7 @@ export const ProjectSheet = ({ open, project }: Props) => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Ver projeto
+                    {buttonLabelLive}
                   </a>
                 </Button>
               )}
@@ -75,7 +79,7 @@ export const ProjectSheet = ({ open, project }: Props) => {
                   rel="noopener noreferrer"
                   onClick={(e) => e.stopPropagation()}
                 >
-                  Ver repositório
+                  {buttonLabelRepo}
                 </Link>
               </Button>
             </div>

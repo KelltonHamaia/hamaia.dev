@@ -145,14 +145,17 @@ const devops: Skill[] = [
 
 export const skills = [
   {
+    key: 'frontend',
     title: 'Front-end',
     technologies: frontend,
   },
   {
+    key: 'backend',
     title: 'Back-end',
     technologies: backend,
   },
   {
+    key: 'databaseAndDevops',
     title: 'Banco de dados & Devops',
     technologies: [...database, ...devops],
   },

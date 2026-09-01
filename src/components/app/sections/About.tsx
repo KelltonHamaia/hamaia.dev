@@ -1,29 +1,26 @@
 import { Button } from '@/components/ui/button'
 import { FileTextIcon } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 import Link from 'next/link'
 
 export const About = () => {
+  const t = useTranslations('About')
+
   return (
     <section className="space-y-2">
       <h2 className="text-subtitle-sm md:text-subtitle flex gap-2 font-bold">
-        Sobre mim
+        {t('title')}
       </h2>
       <p className="text-sm tracking-tight text-pretty">
-        Trabalho criando e mantendo sistemas utilizando Node.js, Vue.js, React,
-        TypeScript e Neo4J. Tenho interesse especial por arquitetura de software
-        (acho muito massa), modelagem de dados e construção de APIs, mas também
-        gosto bastante da parte visual e interativa do frontend. Nas horas
-        vagas, provavelmente estou estudando alguma tecnologia nova ou algum
-        idioma, jogando alguma coisa, assistindo animes ou tomando café.
+        {t('description')}
         <br />
-        Ah sim, e você pode ver
         <Button
           variant="link"
-          className="animate-pulse px-1 text-green-500"
+          className="animate-pulse px-0 text-green-500"
           asChild
         >
-          <Link href="/docs/kellton_hamaia_resumee_pt.pdf">
-            meu currículo aqui <FileTextIcon />
+          <Link href={t('resumeePath')}>
+            {t('buttonText')} <FileTextIcon />
           </Link>
         </Button>
       </p>

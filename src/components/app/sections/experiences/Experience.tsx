@@ -9,28 +9,56 @@ import {
   getDurationBetweenDates,
   getIntervalBetweenDates,
 } from '@/utils/format-date'
+import { useLocale, useTranslations } from 'next-intl'
 import Image from 'next/image'
+import { z } from 'zod/v4'
 
 type Props = {
   experience: Experience
+  isFirst: boolean
 }
-export const ExperienceItem = ({ experience }: Props) => {
+export const ExperienceItem = ({ experience, isFirst }: Props) => {
+  const locale = useLocale()
+
   const dateRange = getDurationBetweenDates(
     experience.period.startedAt,
     experience.period.endedAt,
+    locale,
   )
   const duration = getIntervalBetweenDates(
     experience.period.startedAt,
     experience.period.endedAt,
+    locale,
   )
+
+  const t = useTranslations('Experiences')
+  const companyData = z
+    .object({
+      role: z.string('Field [role] is missing'),
+      description: z.string('Field [description] is missing'),
+      altCompanyImage: z.string('Field [altCompanyImage] is missing'),
+      mainContribuitions: z.array(
+        z.object({
+          key: z.string('Field [key] is missing'),
+          name: z.string('Field [name] is missing'),
+          description: z.string('Field [description] is missing'),
+        }),
+      ),
+    })
+    .parse(t.raw(experience.company))
+
   return (
-    <Accordion type="single" collapsible defaultValue="vexur">
-      <AccordionItem value="vexur">
+    <Accordion
+      type="single"
+      collapsible
+      defaultValue={isFirst ? experience.company : undefined}
+    >
+      <AccordionItem value={experience.company}>
         <AccordionTrigger className="flex gap-4 hover:no-underline">
           <div className="relative size-12 overflow-clip rounded-lg">
             <Image
               src={experience.url}
-              alt={`Logo da empresa ${experience.company}`}
+              alt={companyData.altCompanyImage}
               className="object-cover"
               sizes="48px"
               fill
@@ -44,7 +72,7 @@ export const ExperienceItem = ({ experience }: Props) => {
               </p>
             </div>
             <div className="text-muted-foreground block md:flex">
-              <p className="flex-1">{experience.role}</p>
+              <p className="flex-1">{companyData.role}</p>
               <p className="hidden md:block">{duration}</p>
             </div>
           </div>
@@ -55,13 +83,11 @@ export const ExperienceItem = ({ experience }: Props) => {
             <span>{duration}</span>
           </div>
           <div className="tracking-tight md:pr-8">
-            {experience.description} Abaixo estão as minhas principais
-            contribuições:
+            {companyData.description}
           </div>
-
           <ul className="list-inside list-none">
-            {experience.keyContributions.map((contribution) => (
-              <li className="my-3" key={contribution.name}>
+            {companyData.mainContribuitions.map((contribution) => (
+              <li className="my-3" key={contribution.key}>
                 <p>
                   <span className="text-foreground">{contribution.name}</span>:{' '}
                   <br />

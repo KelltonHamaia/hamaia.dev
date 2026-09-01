@@ -1,0 +1,114 @@
+{
+  "Header": {
+    "greeting": "Hey, Kell here!",
+    "tagline": "Full-stack developer at <highlight>vexur-startup</highlight>, I enjoy studying and solving programming challenges.",
+    "altImage": "My profile picture, Studio Ghibli style"
+  },
+  "CommitPanel": {
+    "githubLoadingPlaceholder": "Fetching GitHub activity...",
+    "totalCount": "{{count}} contributions in {{year}}",
+    "legend": {
+      "less": "Less",
+      "more": "More"
+    }
+  },
+  "About": {
+    "title": "About me",
+    "description": "I build and maintain systems using Node.js, Vue.js, React, TypeScript, and Neo4j. I have a special interest in software architecture (I think it's really cool), data modeling, and API design, but I also really enjoy the visual and interactive side of front-end. In my free time, I'm probably studying some new technology or language, playing something, watching anime, or drinking coffee.",
+    "buttonText": "Oh, and you can check out my resume here",
+    "resumeePath": "/docs/kellton_hamaia_resumee_en.pdf"
+  },
+  "Experiences": {
+    "title": "Professional Experience",
+    "Vexur": {
+      "role": "Fullstack developer",
+      "description": "I work on the development, evolution, and maintenance of web solutions, building APIs and applications using Node.js, TypeScript, Neo4j, Vue.js, and React. My work involves data modeling, system integrations, developing new features, modernizing existing applications, and process automation, always prioritizing simple, scalable, and maintainable solutions. Below are my main contributions:",
+      "altCompanyImage": "Vexur's company image",
+      "mainContribuitions": [
+        {
+          "key": "coopercard",
+          "name": "Integration with the Cooper Card payment institution",
+          "description": "Designed and developed an integration for generating and managing commission payment files, implementing the API with Fastify, TypeScript, and Neo4j, and the interface with Vue 3, including export history tracking and traceability."
+        },
+        {
+          "key": "medsenior",
+          "name": "MedSenior Integration",
+          "description": "Develop and maintain the integration responsible for the proposal onboarding process with health plan provider MedSenior, overseeing the end-to-end flow, from data submission and adaptation to response processing, digital signing, and proposal implementation. I also built an interface to track proposal status and progress."
+        },
+        {
+          "key": "mxm",
+          "name": "MXM Integration",
+          "description": "Maintain and evolve the integration with the MXM ERP, responsible for customer synchronization and submission of financial receivables. I developed automated processes for periodic customer registration and submission of receivables not yet integrated, plus an interface to monitor processed customers and receivables."
+        },
+        {
+          "key": "emails",
+          "name": "Email Communication System",
+          "description": "Restructured the attachment generation flow by building a reusable solution that reduced code coupling and eliminated the need for manual changes for new communications."
+        },
+        {
+          "key": "visualizer",
+          "name": "Communication Viewer Migration",
+          "description": "Led the modernization of the communication viewers, migrating from Vue 2 to React, improving the development experience and making the application easier to evolve and maintain."
+        },
+        {
+          "key": "neo4jOptimization",
+          "name": "Neo4j Query Optimization and Compatibility",
+          "description": "Analyzed and refactored Cypher queries, reviewing the data model when needed to simplify searches, reduce query complexity, and improve application performance. Adapted Cypher queries and made the necessary adjustments to ensure compatibility with the new database version (4 to 5), contributing to the platform upgrade and application continuity."
+        }
+      ]
+    }
+  },
+  "Education": {
+    "title": "Education",
+    "items": [
+      {
+        "type": "High School + Technical Education ",
+        "name": "Technical High School Diploma | IT Technician Diploma",
+        "image": "/images/education/logo-ifpr.webp",
+        "altImage": "Logo of the Federal Institute of Paraná",
+        "start": 2018,
+        "end": 2022,
+        "duration": "4 years"
+      },
+      {
+        "type": "higher Education",
+        "name": "Associate Degree in Internet Systems Technology",
+        "image": "/images/education/logo-ifpr.webp",
+        "altImage": "Logo of the Federal Institute of Paraná",
+        "start": 2022,
+        "end": 2025,
+        "duration": "3 years",
+        "award": "- Awarded with Academic honors 🎖️"
+      }
+    ]
+  },
+  "Skills": {
+    "frontend": "Front-end",
+    "backend": "back-end",
+    "databaseAndDevops": "Database & Devops"
+  },
+  "Projects": {
+    "title": "Projects",
+    "items": [
+      {
+        "name": "Ani.me",
+        "thumbnail": "/images/projects/ani-me.webp",
+        "type": "frontend",
+        "description": "My solution to challenge 29 from the Codelândia Discord community, which involved developing a layout for an anime website.",
+        "technologies": [
+          "React",
+          "Next.js (app Router)",
+          "Tailwindcss",
+          "Zustand",
+          "ShadcnUI"
+        ],
+        "demoURL": "https://challenge-ani-me.vercel.app/",
+        "repositoryURL": "https://github.com/KelltonHamaia/ani.me"
+      }
+    ]
+  },
+  "Footer": {
+    "title": "Let's talk!",
+    "description": "Do you have a question, some feedback, or just want to say hi and chat? I’d be more than happy to connect! Feel free to get in touch using the details below, and I’ll get back to you soon—when in doubt, grab a ☕ and hang tight."
+  }
+}

@@ -1,4 +1,5 @@
 'use client'
+import { useTranslations } from 'next-intl'
 import { useEffect, useState } from 'react'
 import { ActivityCalendar } from 'react-activity-calendar'
 
@@ -16,6 +17,7 @@ interface ApiResponse {
 export const CommitPanel = () => {
   const [data, setData] = useState<Activity[] | null>(null)
   const [error, setError] = useState(false)
+  const t = useTranslations('CommitPanel')
 
   useEffect(() => {
     fetch(
@@ -36,7 +38,7 @@ export const CommitPanel = () => {
   if (!data) {
     return (
       <div className="text-muted-foreground flex h-40 w-full animate-pulse items-center justify-center rounded bg-zinc-900 transition">
-        Buscando atividade do github...
+        {t('githubLoadingPlaceholder')}
       </div>
     )
   }
@@ -50,10 +52,10 @@ export const CommitPanel = () => {
         dark: ['#1f1f1f', '#39d353'],
       }}
       labels={{
-        totalCount: '{{count}} contribuições em {{year}}',
+        totalCount: t.raw('totalCount'),
         legend: {
-          less: 'Menos',
-          more: 'Mais',
+          less: t('legend.more'),
+          more: t('legend.less'),
         },
       }}
     />

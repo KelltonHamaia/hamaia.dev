@@ -2,6 +2,7 @@ import { TooltipProvider } from '@/components/ui/tooltip'
 import { cn } from '@/lib/utils'
 import '@/styles/globals.css'
 import type { Metadata } from 'next'
+import { NextIntlClientProvider } from 'next-intl'
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
@@ -42,7 +43,9 @@ export default function RootLayout({
       )}
     >
       <body className="flex min-h-full flex-col">
-        <TooltipProvider>{children}</TooltipProvider>
+        <NextIntlClientProvider>
+          <TooltipProvider>{children}</TooltipProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   )

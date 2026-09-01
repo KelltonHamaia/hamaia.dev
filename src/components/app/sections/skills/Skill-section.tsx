@@ -14,9 +14,9 @@ export const SkillSection = () => {
 
       {skills.map((skill) => (
         <SkillArea
-          title={skill.title}
           technologies={skill.technologies}
-          key={skill.title}
+          skillKey={skill.key}
+          key={skill.key}
         />
       ))}
     </section>
