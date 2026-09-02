@@ -21,7 +21,6 @@ const Page = () => {
       <Footer />
       <LanguageMenu />
     </main>
-
   )
 }
 export default Page

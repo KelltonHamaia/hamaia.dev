@@ -169,7 +169,7 @@
     cursor: pointer;
   }
   html {
-    @apply font-sans scrollbar-thumb-zinc-700;
+    @apply scrollbar-thumb-zinc-700 font-sans;
   }
 }
 
