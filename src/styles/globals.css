@@ -169,12 +169,12 @@
     cursor: pointer;
   }
   html {
-    @apply font-sans;
+    @apply font-sans scrollbar-thumb-zinc-700;
   }
 }
 
 @layer components {
   .container-base {
-    @apply mx-auto min-h-dvh w-full max-w-212 px-5 py-12 sm:py-24 lg:px-0;
+    @apply mx-auto w-full max-w-212 px-5 py-12 sm:py-24 lg:px-0;
   }
 }

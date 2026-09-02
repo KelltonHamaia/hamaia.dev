@@ -1,7 +1,7 @@
 {
   "Header": {
     "greeting": "Opa, Kell aqui!",
-    "tagline": "Desenvolvedor fullstack na <highlight>vexur-startup</highlight>, gosto de estudar e resolver desafios de programação.",
+    "tagline": "Desenvolvedor Fullstack na <highlight>vexur-startup</highlight>, gosto de estudar e resolver desafios de programação.",
     "altImage": "Minha foto de perfil no estilo do Studio Ghibbli"
   },
   "CommitPanel": {

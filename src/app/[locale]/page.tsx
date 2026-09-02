@@ -1,5 +1,6 @@
 import { Footer } from '@/components/app/layout/footer/Footer'
 import { Header } from '@/components/app/layout/Header'
+import { LanguageMenu } from '@/components/app/layout/language/LanguageMenu'
 import { About } from '@/components/app/sections/About'
 import { Commits } from '@/components/app/sections/commits/Commits'
 import { Education } from '@/components/app/sections/Education'
@@ -18,7 +19,9 @@ const Page = () => {
       <SkillSection />
       <ProjectSection />
       <Footer />
+      <LanguageMenu />
     </main>
+
   )
 }
 export default Page
