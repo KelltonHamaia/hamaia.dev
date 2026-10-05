@@ -28,7 +28,7 @@
         {
           "key": "coopercard",
           "name": "Integration with the Cooper Card payment institution",
-          "description": "Designed and developed an integration for generating and managing commission payment files, implementing the API with Fastify, TypeScript, and Neo4j, and the interface with Vue 3, including export history tracking and traceability."
+          "description": "Designed and developed an integration for generating and managing CSV commission payment files, implementing the API with Fastify, TypeScript, and Neo4j, and the interface with Vue 3, including export history tracking and traceability."
         },
         {
           "key": "medsenior",
